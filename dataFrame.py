@@ -16,7 +16,7 @@ montadora_data = {
 car_df = pd.DataFrame(car_data)
 montadora_df = pd.DataFrame(montadora_data)
 
-client = MongoClient('Coloque_aqui_sua_conexão_para_o_bando_de_dados')
+client = MongoClient('Coloque_aqui_sua_url_de_conexão_para_o_bando_de_dados')
 db = client['Nome_do_banco'] 
 
 car_json = car_df.to_dict(orient='records')
